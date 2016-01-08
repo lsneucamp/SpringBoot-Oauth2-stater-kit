@@ -1,0 +1,39 @@
+server:
+  port: 9999
+
+#Spring Data
+spring:
+  data:
+    # MongoDB configuration
+    mongodb:
+      host: localhost
+      port: 27017
+      database: vine_test
+
+# OAUTH2 Configuration
+authentication:
+    oauth:
+        clientid: friskaApp
+        secret: mySecretOAuthSecret
+        # Token is valid 30 minutes
+        tokenValidityInSeconds: 1800
+
+#Logging
+logging:
+  level:
+    co.lsnbox: DEBUG
+    org.springframework:
+      security: DEBUG
+      web: DEBUG
+
+
+---
+# SPRING TEST PROFILE
+spring:
+  profiles: prod
+  data:
+    # MongoDB configuration
+    mongodb:
+      host: 172.17.0.1
+      port: 27017
+      database: vine_test

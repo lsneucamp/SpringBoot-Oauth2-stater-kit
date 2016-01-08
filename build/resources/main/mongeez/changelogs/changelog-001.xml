@@ -1,0 +1,24 @@
+<mongoChangeLog>
+    <changeSet changeId="ChangeSet-001" author="luciano@friska.com">
+        <!-- create and insert accounts initial data -->
+        <script>
+            db.accounts.ensureIndex({"email" : 1});
+            db.accounts.insert(
+            {
+                "_id" : ObjectId("55d0038fe4b055158c014a6a"),
+                "_class" : "co.lsnbox.auth.Account",
+                "email" : "admin@friska.com",
+                "password" : "$2a$10$OnSJV1HWXOLWazcE3hL.xejJpNdw/IpzwseTGJ/Ub6jK3QjrZ.Ez6",
+                "status" : "ENABLED",
+                "roles" : [
+                    "ADMIN","USER"
+                ],
+                "version" : 0,
+                "createdBy" : "anonymous",
+                "createdDate" : ISODate("2015-08-16T03:29:19.767Z"),
+                "lastModifiedBy" : "anonymous",
+                "lastModifiedDate" : ISODate("2015-08-16T03:29:19.767Z")
+            });
+        </script>
+    </changeSet>
+</mongoChangeLog>

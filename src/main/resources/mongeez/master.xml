@@ -1,0 +1,6 @@
+<changeFiles>
+      <file path="changelogs/changelog-001.xml"/>
+    <!-- Examples for the next change logs entries -->
+    <!--<file path="changelogs/changelog002/profiles.xml"/> -->
+    <!--<file path="changelogs/changelog003/cities.xml"/> -->
+</changeFiles>
