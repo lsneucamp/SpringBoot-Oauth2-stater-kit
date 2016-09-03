@@ -32,9 +32,6 @@ public class AuthserverApplication implements CommandLineRunner {
 			System.out.println("Default Active profile is running");
 
 		}
-//		SecurityContextHolder.getContext().setAuthentication(
-//				new AnonymousAuthenticationToken("anonymous", "N/A", AuthorityUtils
-//						.commaSeparatedStringToAuthorityList(Role.ANONYMOUS.name())));
 	}
 
 	@Bean
@@ -43,7 +40,6 @@ public class AuthserverApplication implements CommandLineRunner {
 		Validator validator = factory.getValidator();
 		return validator;
 	}
-
 
 
 }

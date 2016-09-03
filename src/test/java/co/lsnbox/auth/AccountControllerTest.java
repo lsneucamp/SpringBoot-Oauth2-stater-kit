@@ -13,9 +13,9 @@ public class AccountControllerTest extends AbstractTest {
 
     @Test
     public void findCurrentTest() throws Exception {
-//        mvc.perform(MockMvcRequestBuilders.get("/user")
-//                .header("Authorization", "Bearer " + getAccessToken("admin@friska.com", "friska123")))
-//                .andDo(print())
-//                .andExpect(status().isOk());
+        mvc.perform(MockMvcRequestBuilders.get("/user")
+                .header("Authorization", "Bearer " + getAccessToken("admin@lsnbox.co", "12345")))
+                .andDo(print())
+                .andExpect(status().isOk());
     }
 }

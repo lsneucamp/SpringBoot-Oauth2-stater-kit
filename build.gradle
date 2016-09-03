@@ -42,6 +42,7 @@ dependencies {
     compile("org.mongeez:mongeez:0.9.4")
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("com.jayway.jsonpath:json-path:0.9.1")
     testCompile('org.apache.httpcomponents:httpclient:4.3.6')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

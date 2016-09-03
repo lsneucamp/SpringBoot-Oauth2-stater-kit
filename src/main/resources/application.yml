@@ -8,13 +8,13 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: vine_test
+      database: starter_kit
 
 # OAUTH2 Configuration
 authentication:
     oauth:
-        clientid: friskaApp
-        secret: mySecretOAuthSecret
+        clientid: ${CLIENT_ID}
+        secret: ${SECRET}
         # Token is valid 30 minutes
         tokenValidityInSeconds: 1800
 

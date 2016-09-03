@@ -7,8 +7,8 @@
             {
                 "_id" : ObjectId("55d0038fe4b055158c014a6a"),
                 "_class" : "co.lsnbox.auth.Account",
-                "email" : "admin@friska.com",
-                "password" : "$2a$10$OnSJV1HWXOLWazcE3hL.xejJpNdw/IpzwseTGJ/Ub6jK3QjrZ.Ez6",
+                "email" : "admin@lsnbox.co",
+                "password" : "$2a$10$cRLFQvVkI4oZiaHvOPugxuiYfmOcIPg9UgD4E72FHo0GSvjq31WgK",
                 "status" : "ENABLED",
                 "roles" : [
                     "ADMIN","USER"
